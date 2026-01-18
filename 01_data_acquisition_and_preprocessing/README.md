@@ -1,4 +1,4 @@
-# Epigenetic Aging Project: Step 1 – Data Acquisition & Preprocessing
+# Step 1 – Data Acquisition & Preprocessing
 
 This is the first step of my project to build an epigenetic clock. In this phase, I download, clean, and organize DNA methylation data from the Gene Expression Omnibus (GEO). 
 
