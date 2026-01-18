@@ -14,7 +14,7 @@ I ran several checks on both the Brain and Blood datasets to ensure data integri
 
 #### 1. Age Distribution
 This plot shows that our combined dataset covers almost the entire human lifespan, from prenatal stages (Brain) to over 100 years old (Blood).
-![Age Distribution](figures/age_distributions.png)
+![Age Distribution](figures/age_distributions.jpeg)
 
 #### 2. PCA Analysis (Principal Component Analysis)
 I used PCA to visualize the structure of the data. This helps confirm that the biological differences between tissues are being captured correctly before we start the modeling.
