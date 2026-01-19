@@ -28,7 +28,7 @@ A major goal of this project is to discover aging markers that existing models m
 
 ###  Key Visualization(s)
 * **Gene Overlap Venn Diagram:** Highlights the minimal overlap (13 genes) between brain and blood, emphasizing tissue-specific aging.
-![Gene Overlap Venn Diagram](figures/gene_overlap_venn.png)
+![Gene Overlap Venn Diagram](figures/gene_overlap_venn.jpeg)
 
 
 
