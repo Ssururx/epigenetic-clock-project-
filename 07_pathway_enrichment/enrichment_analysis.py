@@ -569,7 +569,7 @@ Biological Interpretation:
 2. Novelty Insights:
    - Novel genes ({len(novel_brain_list)} in brain, {len(novel_blood_list)} in blood) drive
      many enriched pathways
-   - Suggests previously undiscovered aging mechanisms not captured by
+   - Suggests previously unidentified aging mechanisms not captured by
      established epigenetic clocks
 
 3. Methodological Validation:
