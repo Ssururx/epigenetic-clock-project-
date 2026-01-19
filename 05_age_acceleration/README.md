@@ -19,6 +19,11 @@ By calculating the residuals (Predicted Age - Chronological Age), I used K-Means
 Aging does not always happen at a constant speed. I used advanced modeling (LOWESS smoothing and Piecewise Regression) to map the rate of aging:
 * **Inflection Points:** Identified key ages (e.g., 13.1 and 13.7 years in the brain) where the pace of epigenetic aging shifts.
 * **Life-Stage Dynamics:** The analysis revealed that epigenetic aging is generally decelerated in later life stages, suggesting the "biological clock" ticks fastest during early development and maturation.
+  
+### Nonlinear Trajectory Performance
+The LOWESS and piecewise models prioritize capturing localized biological shifts over global linear accuracy. This results in higher variance at the lifespan extremities, reflecting the inherent biological noise and rapid epigenetic transitions characteristic of early development and advanced age.
+
+
 
 
 ---
