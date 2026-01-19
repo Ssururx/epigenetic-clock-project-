@@ -12,30 +12,44 @@ I used correlation analysis and a custom Tissue Specificity Index (TSI) to evalu
 ---
 
 ### Tissue Specificity Index (TSI) Analysis
-The TSI is a mathematical tool I used to determine if an aging signal is "Universal" (happening everywhere) or "Tissue-Locked" (happening only in one tissue).
+The TSI uses a **two-component framework** that separates the *presence* of aging signals from their *consistency* between tissues. This approach avoids conflating weak shared signals with tissue-restricted effects.
 
-**The Formula:**
-$$TSI = 1 - \frac{|r_{brain} - r_{blood}|}{\max(|r_{brain}|, |r_{blood}|)}$$
+**The Framework:**
+1. **Activity Score (A):** Measures presence of aging signal
+   $$A = \min(|r_{brain}|, |r_{blood}|)$$
+   
+2. **Concordance Score (C):** Measures consistency of aging dynamics
+   $$C = 1 - \frac{|r_{brain} - r_{blood}|}{|r_{brain}| + |r_{blood}|}$$
 
-**How it works:**
-The formula compares the correlation strength ($r$) of a specific CpG in the brain versus the blood. 
-* If the correlations are almost identical, the numerator becomes small, and the TSI approaches 0 (Universal).
-* If the CpG has a strong correlation in one tissue but almost zero in the other, the TSI approaches 1 (Tissue-Specific).
+**Classification Rules:**
+* **Universal:** A > 0.3 and C > 0.8 (strong signal in both tissues, highly consistent)
+* **Tissue-Locked:** A < 0.2 (weak or absent signal in at least one tissue)
+* **Discordant:** A > 0.3 and C < 0.3 (strong signals but divergent patterns)
+* **Intermediate:** Everything else
 
-I applied this formula to the **250 CpGs** shared between the brain and blood datasets. Even though these 250 sites exist in both tissues, they do not always age the same way.
+**Analysis Results:**
+I applied this framework to the **250 CpGs** shared between the brain and blood datasets. Even though these 250 sites exist in both tissues, their aging patterns vary significantly.
 
-| Category | Count | Biological Meaning |
-| :--- | :--- | :--- |
-| **Universal** | 90 CpGs | Core aging signals conserved across both tissues (TSI < 0.3). |
-| **Tissue-Locked** | 29 CpGs | Aging signals unique to the biology of one specific tissue (TSI > 0.8). |
-| **Intermediate** | 131 CpGs | Signals that show varying degrees of tissue-specific modulation. |
+| Category | Count | Percentage | Biological Meaning |
+| :--- | :--- | :--- | :--- |
+| **Tissue-Locked** | 150 CpGs | 60.0% | Aging signals specific to one tissue's biology |
+| **Intermediate** | 65 CpGs | 26.0% | Signals with partial tissue-specific modulation |
+| **Universal** | 35 CpGs | 14.0% | Core aging signals conserved across both tissues |
+| **Discordant** | 0 CpGs | 0.0% | No CpGs showed strong but opposite aging patterns |
+
+**Key Insights:**
+* **Mean Activity (A):** 0.195 indicates weak shared aging signals
+* **Mean Concordance (C):** 0.547 indicates moderate consistency in aging dynamics
+* **Dominant Tissue:** 76.4% of shared CpGs show stronger aging signals in brain
+
 
 ---
 
 ### Shared vs. Unique Markers
 While I analyzed 50,000 CpGs in the brain and 1,670 in the blood, only 250 sites were common to both datasets. 
-* **Shared (250 CpGs):** These are the only sites that allow for a direct comparison of aging rates between brain and blood.
-* **Unique (Not Shared):** The vast majority of markers are unique to one dataset. This is because different tissues and different laboratory platforms often capture different parts of the methylome. Focusing on these unique markers allows for a more specialized and precise "Tissue-Specific Clock."
+
+* **Shared (250 CpGs):** These allow direct comparison of aging patterns between tissues. However, **only 1 CpG appears in both top 500 lists**, showing extreme tissue specificity at the strongest markers.
+* **Unique (Not Shared):** The vast majority of markers are unique to one dataset. This supports developing specialized "Tissue-Specific Clocks" that capture tissue-specific aging biology.
 
 ---
 
@@ -54,8 +68,13 @@ This graph shows how the 250 shared CpGs are distributed across the specificity 
 
 
 ### Data Outputs
-* **top_500_brain_cpgs.csv**: The highest-performing markers for brain age prediction.
-* **top_500_blood_cpgs.csv**: The highest-performing markers for blood age prediction.
-* **universal_cpgs.csv**: 90 markers identified as potential candidates for a pan-tissue aging model.
+* **top_500_brain_cpgs.csv**: The 500 highest-performing markers for brain age prediction
+* **top_500_blood_cpgs.csv**: The 500 highest-performing markers for blood age prediction
+* **tissue_specificity_index_results.csv**: Complete TSI analysis for all 250 shared CpGs
+* **tissue_locked_cpgs.csv**: 150 markers with tissue-specific aging patterns
+* **universal_cpgs.csv**: 35 markers with conserved aging across tissues
+* **intermediate_cpgs.csv**: 65 markers with partial tissue specificity
+* **epigenetic_clock_comparison.csv**: Overlap analysis with Horvath and Hannum clocks
+
 
 Now that feature discovery is complete, we can now move on to **Step 4: Epigenetic Clock Training**.
