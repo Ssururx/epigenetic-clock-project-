@@ -40,7 +40,7 @@ Over **90%** of the genes in our models are not found in the Horvath or Hannum c
 
 ###  Key Outputs Created
 * `unique_brain_pathways.csv` & `unique_blood_pathways.csv`: The definitive list of biological processes specific to each tissue.
-* `novel_brain_enrichment_top50.csv`: The top 50 functional insights discovered from previously overlooked brain genes.
+* `novel_brain_enrichment_top50.csv`: The top 50 functional insights identified from previously overlooked brain genes.
 * `pathway_enrichment_heatmap_data.csv`: A machine-readable matrix of all biological pathway strengths.
 
 The biological drivers of aging now have been identified and validated, this allows us to move on to **Step 8: Statistical Validation**.
