@@ -12,9 +12,9 @@ I evaluated the models on the full datasets to confirm their reliability across 
 | Correlation (r) | 0.987 | 0.933 |
 | R-squared (R²) | 0.9732 | 0.8689 |
 | Mean Absolute Error (MAE) | 2.25 years | 5.42 years |
-| P-value | 2.88e-267 | < 1e-16 |
+| P-value | 2.88e-267 | < 1e-300 |
 
-> **Note:** Extremely small p-values (e.g., < 1e-16) indicate values below numerical precision. They are not exactly zero; this formatting ensures statistical correctness in reporting.
+> **Note:** Extremely small p-values (e.g., < 1e-300) indicate values below numerical precision. They are not exactly zero; this formatting ensures statistical correctness in reporting.
 
 
 ---
@@ -38,9 +38,13 @@ To move beyond simple correlations, I implemented two advanced validation techni
 ---
 
 ###  Key Visualizations
-* **Brain & Blood Prediction Plots:** I generated scatter plots showing the high-fidelity alignment between chronological age and the age predicted by my AI models.
+**Brain & Blood Prediction Plots:**  
+I generated scatter plots showing the high-fidelity alignment between chronological age and the age predicted by my AI models.
+
 ![Brain Predictions](figures/brain_predictions.jpeg)
+
 ![Blood Predictions](figures/blood_predictions.jpeg)
+
 
 * **Bootstrap Distributions:** I created histograms showing the tight confidence intervals for the model's error rates, which gives me high confidence in the clock's reliability.
 ![Brain Bootstrap Distributions](figures/brain_bootstraps_distributions.jpeg)
