@@ -12,7 +12,7 @@ I evaluated the models on the full datasets to confirm their reliability across 
 | Correlation (r) | 0.987 | 0.933 |
 | R-squared (R²) | 0.9732 | 0.8689 |
 | Mean Absolute Error (MAE) | 2.25 years | 5.42 years |
-| P-value | 2.88e-267 | < 1e-300 |
+| P-value | < 1e-100 | < 1e-300 |
 
 > **Note:** Extremely small p-values (e.g., < 1e-300) indicate values below numerical precision. They are not exactly zero; this formatting ensures statistical correctness in reporting.
 
