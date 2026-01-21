@@ -35,11 +35,10 @@ I ran a comparative functional analysis on the unique gene lists (510 Blood-spec
 ---
 
 ###  Key Visualizations
-* **Comparative Tissue Enrichment Heatmap:** A dual-tissue visualization highlighting the divergent biological pathways and the strength of association across the brain and blood datasets.
-![Comparative Tissue Enrichment Heatmap](figures/pathway_enrichment_heatmap.png)
 
 * **Genomic Context Distribution:** A side-by-side comparison of where aging CpGs fall within gene structures (e.g., Promoter vs. Body), illustrating the unique regulatory logic of each tissue.
-![Genomic Context Comparison](figures/comprehensive_tissue_comparison.png)
+![Genomic Context Comparison (Blood)](figures/comprehensive_tissue_comparison.jpeg)
+![Genomic Context Comparison (Brain)](figures/comprehensive_tissue_comparison.jpeg)
 
 ---
 
