@@ -42,6 +42,9 @@ This plot shows the difference between predicted biological age and chronologica
 ### Nonlinear Aging Trajectories
 This plot shows epigenetic age versus chronological age using LOWESS smoothing and piecewise regression. It captures the nonlinear dynamics of aging, showing faster biological aging during early development and more stable rates in adulthood, with subtle differences between brain and blood.  
 ![Nonlinear Aging Trajectories (Brain)](figures/brain_nonlinear_trajectories.jpeg)
+
+---
+
 ![Nonlinear Aging Trajectories (Blood)](figures/blood_nonlinear_trajectories.jpeg)
 
 
