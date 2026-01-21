@@ -37,9 +37,18 @@ I ran a comparative functional analysis on the unique gene lists (510 Blood-spec
 ###  Key Visualizations
 
 * **Genomic Context Distribution:** A side-by-side comparison of where aging CpGs fall within gene structures (e.g., Promoter vs. Body), illustrating the unique regulatory logic of each tissue.
-![Genomic Context Distribution: Blood](figures/aging_CpG_genomic_context_blood.jpeg)
----
-![Genomic Context Distribution: Brain](figures/aging_CpG_genomic_context_brain.jpeg)
+
+<table>
+<tr>
+<td>
+<img src="figures/aging_CpG_genomic_context_blood.jpeg" alt="Genomic Context Distribution: Blood" width="600">
+</td>
+<td>
+<img src="figures/aging_CpG_genomic_context_brain.jpeg" alt="Genomic Context Distribution: Brain" width="600">
+</td>
+</tr>
+</table>
+
 
 
 ---
