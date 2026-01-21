@@ -30,8 +30,17 @@ To achieve these results, I performed a multi-stage optimization process:
 ### Key Visualizations
 #### 1. Prediction Accuracy 
 This plot compares predicted age vs. actual age. The tight clustering along the 45-degree line (representing ideal performance) shows the model is accurate across the entire lifespan.
-![Brain Predictions](figures/brain_test_predictions.jpeg)
-![Blood Predictions](figures/blood_test_predictions.jpeg)
+<table>
+<tr>
+<td>
+<img src="figures/brain_test_predictions.jpeg" alt="Brain Predictions" width="800">
+</td>
+<td>
+<img src="figures/blood_test_predictions.jpeg" alt="Blood Predictions" width="800">
+</td>
+</tr>
+</table>
+
 
 #### 2. Feature Stability
 This chart shows how many CpGs were consistently chosen by the **Brain model** during cross-validation. High stability indicates that the model is picking up real biological signals. 
@@ -47,4 +56,4 @@ For the Blood model, the pre-selected 500 CpGs exhibited 100% stability, confirm
 * **External Validation:** To prove these models work on independent data, I am planning to validate the Brain clock using the **ROSMAP** dataset. External validation for the Blood clock is also planned as more datasets become available.
 * **Expanding Data:** I am actively looking for more samples for both tissues to further improve the model's precision and diversity.
 
-Training is now complete for the primary tissue-specific clocks, this allows us to move on to **Step 5: Residual Analysis and Age Acceleration**.
+Since training is now complete for the primary tissue-specific clocks, we can move on to **Step 5: Residual Analysis and Age Acceleration**.
