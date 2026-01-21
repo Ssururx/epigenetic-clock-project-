@@ -17,18 +17,18 @@ Using the Illumina 450K annotation manifest, I mapped the top 500 CpGs from each
 
 ---
 
-###  Discovery of Unique Aging Genes
+###  Identification of Unique Aging Genes
 A major goal of this project is to discover aging markers that existing models might have missed. I compared my gene lists against the two most famous epigenetic clocks: **Horvath (2013)** and **Hannum (2013)**.
 
-* **Brain Discovery:** 358 genes (**98.6%**) identified in my model are not found in the Horvath/Hannum clocks.
-* **Blood Discovery:** 505 genes (**96.6%**) are uniquemarkers not used in the original gold-standard clocks.
+* **Brain Unique Genes Identified:** 358 genes (**98.6%**) identified in my model are not found in the Horvath/Hannum clocks.
+* **Blood Unique Genes Identified:** 505 genes (**96.6%**) are uniquemarkers not used in the original gold-standard clocks.
 * **Significance:** These unique genes represent potential new targets for anti-aging research and suggest that my models are capturing novel biological signals overlooked by earlier research.
 
 ---
 
 ###  Key Visualization(s)
 * **Gene Overlap Venn Diagram:** Highlights the minimal overlap (13 genes) between brain and blood, emphasizing tissue-specific aging.
-![Gene Overlap Venn Diagram](figures/gene_overlap_venn.jpeg)
+<img src="figures/gene_overlap_venn.jpeg" alt="Gene Overlap Venn Diagram" width="500">
 
 
 
