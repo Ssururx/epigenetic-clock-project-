@@ -48,9 +48,11 @@ The following table summarizes the mathematical and statistical output for both 
 
 The primary analytical outputs consist of two comprehensive 9-panel dashboards: one for the whole blood dataset and one for the brain prefrontal cortex samples. These visualizations provide a high-dimensional overview of how the extracted mathematical components correlate with biological aging.
 
-![Blood Genomic Dashboard](figures/blood-genomic-dashboard.jpg)
-![Brain Genomic Dashboard](figures/brain-genomic-dashboard.jpg)
+<img src="figures/blood-genomic-dashboard.jpg" width="75%" alt="Blood Genomic Dashboard">
 
+---
+
+<img src="figures/brain-genomic-dashboard.jpg" width="75%" alt="Brain Genomic Dashboard">
 
 ---
 
