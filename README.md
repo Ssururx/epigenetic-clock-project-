@@ -1,7 +1,8 @@
 # TissueMethylome Clock (TMC): Multi-Aging Tissue Analysis
 
 ## Project Summary
-This project develops and analyzes tissue-specific epigenetic clocks using DNA methylation data from 1,657 human brain and blood samples. We built high-accuracy age predictors that reveal fundamental differences in how aging manifests across tissues, identifying unique biomarkers not captured by established epigenetic clocks. For more insight and detail on steps, outcomes, visualizations, work-in-progress analyses, and related data, see the README files in each project subfolder.
+This project develops and analyzes tissue-specific epigenetic clocks using DNA methylation data from 1,657 human brain and blood samples. We built high-accuracy age predictors that reveal fundamental differences in how aging manifests across tissues, identifying unique biomarkers not captured by established epigenetic clocks. For more insight and detail on steps, outcomes, visualizations, work-in-progress analyses, and related data, see the README files in each project subfolder. All analysis code was originally developed and run in Google Colab and has been copied to this GitHub repository; GitHub contains the latest snapshot of the project.
+
 
 ## Project Folder Structure
 The folder structure below shows scripts, figures, and documentation for each step of the project:
